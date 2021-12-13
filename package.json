@@ -1,0 +1,17 @@
+{
+  "name": "speedy-react",
+  "version": "1.2.2",
+  "description": "React Component Generator",
+  "bin": {
+    "speedy": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "codegen"
+  ],
+  "author": "Patrick Keenan",
+  "license": "MIT"
+}
