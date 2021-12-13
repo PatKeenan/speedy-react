@@ -1,4 +1,4 @@
-# React Speedy
+# Speedy React
 
 Speedy React is a code generator which creates components based on a predefined structure.
 
