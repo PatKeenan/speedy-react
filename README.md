@@ -5,7 +5,7 @@ Speedy React is a code generator which creates components based on a predefined 
 ## Getting Started
 
 ```
-npm i react-speedy
+npm i speedy-react
 ```
 
 ## Usage
