@@ -90,7 +90,7 @@ const decide = (defaultCase, ...args) => {
   return defaultCase;
 };
 
-const appendToFile = (file, data) => fs.appendFileSync(file, data());
+const appendToFile = (file, data) => fs.appendFileSync(file, data);
 
 //////// Generators ////////
 
