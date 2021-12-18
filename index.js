@@ -103,13 +103,17 @@ function curryGen(path) {
 function generateFiles(generator, config, comp) {
   map(
     (file) =>
-      generator(capitalize(comp), file.ext, file.template ? file.template : ""),
+      generator(
+        capitalize(comp),
+        file.ext,
+        file.template ? file.template(comp) : ""
+      ),
     config.components.files
   );
   if (config.exportFile && config.exportFile.template) {
     appendToFile(
       combine(config.exportFile.path, "/", `index${config.exportFile.type}`),
-      config.exportFile.template ? config.exportFile.template() + "\n" : ""
+      config.exportFile.template ? config.exportFile.template(comp) + "\n" : ""
     );
   }
 }
